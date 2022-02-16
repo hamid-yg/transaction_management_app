@@ -1,0 +1,19 @@
+{
+  "name": "transaction-api",
+  "version": "1.0.0",
+  "description": "API to manage banking transactions",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.1",
+    "fastify-plugin": "^3.0.1",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
