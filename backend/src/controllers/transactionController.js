@@ -32,7 +32,7 @@ const updateTransaction = async (req, reply) => {
     try {
         const { ...update } = req.body;
         const transaction = await Transaction.findByIdAndUpdate(req.params.id, update, {new: true});
-        return transaction;
+        reply.send(transaction);
     } catch (err) {
         console.log(err);
     };
@@ -41,6 +41,7 @@ const updateTransaction = async (req, reply) => {
 const delTransaction = async (req, reply) => {
     try {
         const transaction = await Transaction.findByIdAndRemove(req.params.id);
+        reply.send(transaction);
         return transaction;
     } catch (err) {
         console.log(err);
