@@ -28,7 +28,7 @@ Clone and go into the backend directory.
 ```bash
 $ npm install
 $ Setup env variable depending on the .env.example
-$ npm run dev
+$ npm start
 ```
 
 Clone and go into the frontend directory.
