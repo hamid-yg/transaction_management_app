@@ -8,7 +8,6 @@ Banking transaction management app
 
 > The purpose of this project is to implement a web application to manage banking transaction (API and Frontend).
 
-
 - `FRONT-END:` `reactjs`
 
 - `BACK-END:` `nodejs (fastify)`
@@ -29,7 +28,7 @@ Clone and go into the backend directory.
 ```bash
 $ npm install
 $ Setup env variable depending on the .env.example
-$ npm run dev
+$ npm start
 ```
 
 Clone and go into the frontend directory.
