@@ -8,7 +8,6 @@ Banking transaction management app
 
 > The purpose of this project is to implement a web application to manage banking transaction (API and Frontend).
 
-
 - `FRONT-END:` `reactjs`
 
 - `BACK-END:` `nodejs (fastify)`
