@@ -8,6 +8,10 @@ const server = fastify({
     logger: true
 });
 
+server.register(require('fastify-cors'), { 
+    option: "https://localhost:3000/"
+})
+
 mongoose.connect(process.env.MONGO_DB_URL)
   .then(() => console.log("Database connected"))
   .catch((err) => console.log(err))
