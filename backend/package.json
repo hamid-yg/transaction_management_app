@@ -4,8 +4,7 @@
   "description": "API to manage banking transactions",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +15,8 @@
     "fastify-plugin": "^3.0.1",
     "mongoose": "^6.2.1",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
