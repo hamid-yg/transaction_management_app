@@ -11,7 +11,7 @@ const EditTransaction = props => {
 
 	const handleChange = event => {
 		const { name, value } = event.target
-		setTransaction({ ...transaction, [name]: value })
+		setTransaction({ ...transaction, [name]: value, updated_at: new Date() })
 	}
 
 	return (
@@ -22,12 +22,12 @@ const EditTransaction = props => {
 			}}
 		>
 
-			<div class="mb-3">
+			<div className="mb-3">
 				<label className="form-label">Amount</label>
 				<input type="number" className="form-control" name="amount" value={transaction.amount} onChange={handleChange} />
 			</div>
 
-			<div class="mb-3">
+			<div className="mb-3">
 				<label className="form-label">Description</label>
 				<input type="text" className="form-control" name="description" value={transaction.description} onChange={handleChange} />
 			</div>

@@ -23,7 +23,6 @@ function App() {
 
 	const addTransaction = async (transaction) => {
 		const result = await APIProvider.create(transaction)
-		console.log(result)
 		setTransactions([ ...transactions, result.data])
 	}
 
@@ -33,12 +32,14 @@ function App() {
 	}
 
 	const updateTransaction = async (id, updatedTransaction) => {
+		// eslint-disable-next-line
 		const result = await APIProvider.update(id, updatedTransaction)
 		setTransactions(transactions.map(transaction => (transaction._id === id ? updatedTransaction : transaction)))
 		setEditing(false)
 	}
 
 	const deleteTransaction = async (id) => {
+		// eslint-disable-next-line
 		const result = await APIProvider.delete(id)
 		setTransactions(transactions.filter(transaction => transaction._id !== id));
 	}
