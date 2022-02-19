@@ -17,6 +17,7 @@ const AddTransaction = props => {
 				event.preventDefault()
 				if (!transaction.amount || !transaction.description) return
 				props.addTransaction(transaction);
+				setTransaction({amount: 0, description: ""})
 			}}
 		>
 
